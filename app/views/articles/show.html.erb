@@ -7,3 +7,4 @@ description: <%= @article.description %>
 </p>
  <td> <%= link_to 'Back', articles_path %></td>
  <td> <%= link_to 'Edit', edit_article_path(@article)%>
+ <td> <%= link_to 'Delete', article_path(@article), method: :Delete, data: {confirm: "Are You Sure?"} %></td>
