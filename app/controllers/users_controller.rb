@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-    before_action :set_params, only: [:edit, :update]
+    before_action :set_params, only: [:edit, :update, :show]
     def new
         @user= User.new
     end
@@ -23,6 +23,9 @@ class UsersController < ApplicationController
         end
     end
     def edit
+
+    end
+    def show
 
     end
 
