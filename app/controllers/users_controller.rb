@@ -1,5 +1,8 @@
 class UsersController < ApplicationController
     before_action :set_params, only: [:edit, :update, :show]
+    def index
+        @users= User.all
+    end
     def new
         @user= User.new
     end
